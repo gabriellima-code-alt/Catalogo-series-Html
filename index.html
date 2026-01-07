@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Águia - Suas Séries Favoritas</title>
+    <!-- Link para o arquivo CSS externo que contém toda a estilização -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho: Contém o título do site e o menu de navegação -->
+    <header>
+        <div class="container">
+            <h1 class="logo">Catálogo Águia</h1>
+
+            <nav>
+                <ul class="menu">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#destaque">Destaque</a></li>
+                    <li><a href="#series">Séries</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Hero: Primeira parte que o usuário vê -->
+    <section id="inicio" class="secao hero">
+        <div class="container hero-conteudo">
+            <div class="hero-texto">
+                <h2>Explore novas séries para maratonar</h2>
+                <p>Encontre as melhores recomendações de suspense, terror e ficção científica em um só lugar. O catálogo perfeito para quem busca emoção.</p>
+
+                <!-- Botões de filtro para organizar as séries por categoria -->
+                <div class="filtros">
+                    <a href="index.html#series" class="filtro">Todos</a>
+                    <a href="suspense.html" class="filtro">Suspense</a>
+                    <a href="comedia.html" class="filtro">Comédia</a>
+                    <a href="terror.html" class="filtro">Terror</a>
+                    <a href="ficcao.html" class="filtro">Ficção Científica</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Série Destaque: Uma box maior com uma série aleatória escolhida -->
+    <section id="destaque" class="secao-destaque">
+        <div class="container">
+            <h2 class="titulo-secao">Série em Destaque</h2>
+            <div class="box-destaque">
+                <div class="destaque-imagem">
+                    <img src="img/the_last_of_us.jpg" alt="Série em Destaque">
+                </div>
+                <div class="destaque-info">
+                    <span class="tag-destaque">Recomendação da Semana</span>
+                    <h3>The Last of Us</h3>
+                    <p class="genero">Drama, Ficção Científica, Sobrevivência</p>
+                    <p class="descricao">
+                        Vinte anos após a destruição da civilização moderna, Joel, um sobrevivente experiente, é contratado para tirar Ellie, uma menina de 14 anos, de uma zona de quarentena opressiva. O que começa como um pequeno trabalho logo se torna uma jornada brutal e emocionante.
+                    </p>
+                    <button class="btn-assistir">Ver Detalhes</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Catálogo: Onde as séries são exibidas em formato de grade (grid) -->
+    <section id="series" class="secao secao-cinza">
+        <div class="container">
+            <h2 class="titulo-secao">Catálogo Completo</h2>
+        <div class="corrossel">
+            <div class="grid-series">
+                <!-- Card 1: Dark -->
+                <div class="card-serie">
+                    <img src="img/dark.jpg" alt="Poster da série Dark">
+                    <div class="card-conteudo">
+                        <h3>Dark</h3>
+                        <p class="genero">Suspense, Ficção Científica</p>
+                        <p class="descricao">Quatro famílias iniciam uma busca desesperada por respostas quando uma criança desaparece e um mistério complexo se revela.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2: Origem -->
+                <div class="card-serie">
+                    <img src="img/origem.jpg" alt="Poster da série Origem">
+                    <div class="card-conteudo">
+                        <h3>Origem</h3>
+                        <p class="genero">Terror, Mistério</p>
+                        <p class="descricao">Uma cidade misteriosa na América Central prende todos aqueles que nela entram. Os moradores lutam para sair.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3: Stranger Things -->
+                <div class="card-serie">
+                    <img src="img/stranger_things.jpg" alt="Poster da série Stranger Things">
+                    <div class="card-conteudo">
+                        <h3>Stranger Things</h3>
+                        <p class="genero">Ficção Científica, Terror</p>
+                        <p class="descricao">Um grupo de amigos se envolve em uma série de eventos sobrenaturais na pequena cidade de Hawkins.</p>
+                    </div>
+                </div>
+
+                <!-- Card 4: Dexter -->
+                <div class="card-serie">
+                    <img src="img/dexter.jpg" alt="Poster da série Dexter">
+                    <div class="card-conteudo">
+                        <h3>Dexter</h3>
+                        <p class="genero">Drama, Policial, Suspense</p>
+                        <p class="descricao">Um analista forense da polícia de Miami vive uma vida dupla como um assassino em série que caça criminosos.</p>
+                    </div>
+                </div>
+                <!-- Card 5: Breaking Bad -->
+                <div class="card-serie">
+                    <img src="img/breaking_bad.jpg" alt="Poster da série Breaking Bad">
+                    <div class="card-conteudo">
+                        <h3>Breaking Bad</h3>
+                        <p class="genero">Drama, Crime</p>
+                        <p class="descricao">Um professor de química se torna um traficante de metanfetamina após ser diagnosticado com câncer.</p>
+                    </div>
+                </div>
+
+                <!-- Card 6: Severance (Ruptura) -->
+                <div class="card-serie">
+                    <img src="img/ruptura.jpg" alt="Poster da série Ruptura">
+                    <div class="card-conteudo">
+                        <h3>Ruptura</h3>
+                        <p class="genero">Ficção Científica, Suspense</p>
+                        <p class="descricao">Funcionários de uma empresa passam por um procedimento que separa suas memórias de trabalho e vida pessoal.</p>
+                    </div>
+                </div>
+
+                <!-- Card 7: Succession -->
+                <div class="card-serie">
+                    <img src="img/succession.jpg" alt="Poster da série Succession">
+                    <div class="card-conteudo">
+                        <h3>Succession</h3>
+                        <p class="genero">Drama</p>
+                        <p class="descricao">Acompanha a família Roy, dona de um império de mídia, enquanto lutam pelo controle da empresa.</p>
+                    </div>
+                </div>
+
+                <!-- Card 8: The Bear -->
+                <div class="card-serie">
+                    <img src="img/the_bear.jpg" alt="Poster da série The Bear">
+                    <div class="card-conteudo">
+                        <h3>The Bear</h3>
+                        <p class="genero">Drama, Comédia</p>
+                        <p class="descricao">Um jovem chef de alta gastronomia volta para Chicago para administrar a lanchonete de sua família.</p>
+                    </div>
+                </div>
+
+                <!-- Card 9: Fallout -->
+                <div class="card-serie">
+                    <img src="img/fallout.jpg" alt="Poster da série Fallout">
+                    <div class="card-conteudo">
+                        <h3>Fallout</h3>
+                        <p class="genero">Ficção Científica, Ação</p>
+                        <p class="descricao">Em um futuro pós-apocalíptico, os habitantes de luxuosos abrigos nucleares retornam à paisagem infernal deixada para trás.</p>
+                    </div>
+                </div>
+
+                <!-- Card 10: Black Mirror -->
+                <div class="card-serie">
+                    <img src="img/black_mirror.jpg" alt="Poster da série Black Mirror">
+                    <div class="card-conteudo">
+                        <h3>Black Mirror</h3>
+                        <p class="genero">Ficção Científica, Suspense</p>
+                        <p class="descricao">Uma série de antologia que explora um futuro próximo onde a tecnologia e a natureza humana colidem.</p>
+                    </div>
+                </div>
+
+                <!-- Card 11: The Boys -->
+                <div class="card-serie">
+                    <img src="img/the_boys.jpg" alt="Poster da série The Boys">
+                    <div class="card-conteudo">
+                        <h3>The Boys</h3>
+                        <p class="genero">Ação, Sátira</p>
+                        <p class="descricao">Um grupo de vigilantes se propõe a derrubar super-heróis corruptos que abusam de seus superpoderes.</p>
+                    </div>
+                </div>
+
+                <!-- Card 12: Mindhunter -->
+                <div class="card-serie">
+                    <img src="img/mindhunter.jpg" alt="Poster da série Mindhunter">
+                    <div class="card-conteudo">
+                        <h3>Mindhunter</h3>
+                        <p class="genero">Crime, Suspense</p>
+                        <p class="descricao">Dois agentes do FBI expandem as fronteiras da ciência criminal ao entrevistar assassinos em série.</p>
+                    </div>
+                </div> 
+                <!-- Card 1: Dark -->
+                <div class="card-serie">
+                    <img src="img/dark.jpg" alt="Poster da série Dark">
+                    <div class="card-conteudo">
+                        <h3>Dark</h3>
+                        <p class="genero">Suspense, Ficção Científica</p>
+                        <p class="descricao">Quatro famílias iniciam uma busca desesperada por respostas quando uma criança desaparece e um mistério complexo se revela.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2: Origem -->
+                <div class="card-serie">
+                    <img src="img/origem.jpg" alt="Poster da série Origem">
+                    <div class="card-conteudo">
+                        <h3>Origem</h3>
+                        <p class="genero">Terror, Mistério</p>
+                        <p class="descricao">Uma cidade misteriosa na América Central prende todos aqueles que nela entram. Os moradores lutam para sair.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3: Stranger Things -->
+                <div class="card-serie">
+                    <img src="img/stranger_things.jpg" alt="Poster da série Stranger Things">
+                    <div class="card-conteudo">
+                        <h3>Stranger Things</h3>
+                        <p class="genero">Ficção Científica, Terror</p>
+                        <p class="descricao">Um grupo de amigos se envolve em uma série de eventos sobrenaturais na pequena cidade de Hawkins.</p>
+                    </div>
+                </div>
+
+                <!-- Card 4: Dexter -->
+                <div class="card-serie">
+                    <img src="img/dexter.jpg" alt="Poster da série Dexter">
+                    <div class="card-conteudo">
+                        <h3>Dexter</h3>
+                        <p class="genero">Drama, Policial, Suspense</p>
+                        <p class="descricao">Um analista forense da polícia de Miami vive uma vida dupla como um assassino em série que caça criminosos.</p>
+                    </div>
+                </div>
+                <!-- Card 5: Breaking Bad -->
+                <div class="card-serie">
+                    <img src="img/breaking_bad.jpg" alt="Poster da série Breaking Bad">
+                    <div class="card-conteudo">
+                        <h3>Breaking Bad</h3>
+                        <p class="genero">Drama, Crime</p>
+                        <p class="descricao">Um professor de química se torna um traficante de metanfetamina após ser diagnosticado com câncer.</p>
+                    </div>
+                </div>
+
+                <!-- Card 6: Severance (Ruptura) -->
+                <div class="card-serie">
+                    <img src="img/ruptura.jpg" alt="Poster da série Ruptura">
+                    <div class="card-conteudo">
+                        <h3>Ruptura</h3>
+                        <p class="genero">Ficção Científica, Suspense</p>
+                        <p class="descricao">Funcionários de uma empresa passam por um procedimento que separa suas memórias de trabalho e vida pessoal.</p>
+                    </div>
+                </div>
+
+                <!-- Card 7: Succession -->
+                <div class="card-serie">
+                    <img src="img/succession.jpg" alt="Poster da série Succession">
+                    <div class="card-conteudo">
+                        <h3>Succession</h3>
+                        <p class="genero">Drama</p>
+                        <p class="descricao">Acompanha a família Roy, dona de um império de mídia, enquanto lutam pelo controle da empresa.</p>
+                    </div>
+                </div>
+
+                <!-- Card 8: The Bear -->
+                <div class="card-serie">
+                    <img src="img/the_bear.jpg" alt="Poster da série The Bear">
+                    <div class="card-conteudo">
+                        <h3>The Bear</h3>
+                        <p class="genero">Drama, Comédia</p>
+                        <p class="descricao">Um jovem chef de alta gastronomia volta para Chicago para administrar a lanchonete de sua família.</p>
+                    </div>
+                </div>
+
+                <!-- Card 9: Fallout -->
+                <div class="card-serie">
+                    <img src="img/fallout.jpg" alt="Poster da série Fallout">
+                    <div class="card-conteudo">
+                        <h3>Fallout</h3>
+                        <p class="genero">Ficção Científica, Ação</p>
+                        <p class="descricao">Em um futuro pós-apocalíptico, os habitantes de luxuosos abrigos nucleares retornam à paisagem infernal deixada para trás.</p>
+                    </div>
+                </div>
+
+                <!-- Card 10: Black Mirror -->
+                <div class="card-serie">
+                    <img src="img/black_mirror.jpg" alt="Poster da série Black Mirror">
+                    <div class="card-conteudo">
+                        <h3>Black Mirror</h3>
+                        <p class="genero">Ficção Científica, Suspense</p>
+                        <p class="descricao">Uma série de antologia que explora um futuro próximo onde a tecnologia e a natureza humana colidem.</p>
+                    </div>
+                </div>
+
+                <!-- Card 11: The Boys -->
+                <div class="card-serie">
+                    <img src="img/the_boys.jpg" alt="Poster da série The Boys">
+                    <div class="card-conteudo">
+                        <h3>The Boys</h3>
+                        <p class="genero">Ação, Sátira</p>
+                        <p class="descricao">Um grupo de vigilantes se propõe a derrubar super-heróis corruptos que abusam de seus superpoderes.</p>
+                    </div>
+                </div>
+
+                <!-- Card 12: Mindhunter -->
+                <div class="card-serie">
+                    <img src="img/mindhunter.jpg" alt="Poster da série Mindhunter">
+                    <div class="card-conteudo">
+                        <h3>Mindhunter</h3>
+                        <p class="genero">Crime, Suspense</p>
+                        <p class="descricao">Dois agentes do FBI expandem as fronteiras da ciência criminal ao entrevistar assassinos em série.</p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Seção Sobre: Informações sobre o projeto -->
+    <section id="sobre" class="secao">
+        <div class="container">
+            <h2 class="titulo-secao">Sobre o Catálogo</h2>
+            <p>
+                O Catálogo Águia nasceu como um projeto para organizar e recomendar as melhores séries da atualidade. Focado em gêneros que prendem a atenção, nosso objetivo é ajudar você a encontrar sua próxima maratona de forma rápida e visual.
+            </p>
+        </div>
+    </section>
+
+    <!-- Seção Contato: Formas de falar com o administrador -->
+    <section id="contato" class="secao secao-cinza">
+        <div class="container">
+            <h2 class="titulo-secao">Contato</h2>
+            <p>Quer enviar sugestões de séries ou fazer uma parceria?</p>
+            <ul class="lista-contato">
+                <li><strong>Email:</strong> contato@catalogoaguia.com</li>
+                <li><strong>Instagram:</strong> @catalogo_aguia</li>
+                <li><strong>LinkedIn:</strong> /in/catalogoaguia</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Rodapé: Final da página com direitos autorais -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 - Catálogo Águia. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

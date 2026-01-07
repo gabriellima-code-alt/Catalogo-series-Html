@@ -1,0 +1,369 @@
+/* 
+   ==========================================================================
+   CONFIGURAÇÕES GERAIS (RESET)
+   ========================================================================== 
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que padding e bordas não aumentem o tamanho total do elemento */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte moderna e legível */
+    background-color: #141414; /* Fundo escuro estilo plataformas de streaming */
+    color: #ffffff; /* Texto branco para melhor contraste no fundo escuro */
+    line-height: 1.6; /* Espaçamento entre linhas para melhor leitura */
+    overflow-x: hidden; /* Evita barra de rolagem horizontal indesejada */
+}
+
+/* Container para centralizar o conteúdo e limitar a largura máxima */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+/* 
+   ==========================================================================
+   CABEÇALHO (HEADER)
+   ========================================================================== 
+*/
+
+header {
+    background-color: rgba(20, 20, 20, 0.95); /* Fundo escuro com leve transparência */
+    color: #fff;
+    padding: 15px 0;
+    position: sticky; /* Mantém o menu fixo no topo ao rolar a página */
+    top: 0;
+    z-index: 1000; /* Garante que o menu fique sempre por cima de tudo */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between; /* Logo na esquerda, Menu na direita */
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #e50914; /* Vermelho vibrante característico */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Menu de Navegação */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    color: #e5e5e5;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    transition: color 0.3s; /* Suaviza a mudança de cor no hover */
+}
+
+.menu a:hover {
+    color: #e50914; /* Muda para vermelho ao passar o mouse */
+}
+
+/* 
+   ==========================================================================
+   SEÇÃO HERO (BANNER INICIAL)
+   ========================================================================== 
+*/
+
+.hero {
+    padding: 100px 0;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
+                url('https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: #ccc;
+}
+
+/* Botões de Filtro */
+.filtros {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap; /* Permite que os botões quebrem linha em telas menores */
+}
+
+.filtro {
+    padding: 8px 20px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s;
+    text-decoration: none; /* Remove sublinhado de links */
+    display: inline-block; /* Garante que o padding funcione em links */
+}
+
+.filtro:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* 
+   ==========================================================================
+   SEÇÃO SÉRIE EM DESTAQUE (BOX MAIOR)
+   ========================================================================== 
+*/
+
+.secao-destaque {
+    padding: 60px 0;
+    background-color: #141414;
+}
+
+.titulo-secao {
+    font-size: 24px;
+    margin-bottom: 30px;
+    border-left: 4px solid #e50914; /* Detalhe visual na lateral do título */
+    padding-left: 15px;
+}
+
+.box-destaque {
+    display: flex;
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    align-items: center;
+}
+
+.destaque-imagem {
+    flex: 1.2; /* A imagem ocupa um pouco mais de espaço que o texto */
+}
+
+.destaque-imagem img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+.destaque-info {
+    flex: 1;
+    padding: 40px;
+}
+
+.tag-destaque {
+    background-color: #e50914;
+    color: #fff;
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.destaque-info h3 {
+    font-size: 36px;
+    margin: 15px 0 10px;
+}
+
+.destaque-info .genero {
+    color: #aaa;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.destaque-info .descricao {
+    font-size: 16px;
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+.btn-assistir {
+    padding: 12px 30px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: opacity 0.2s;
+}
+
+.btn-assistir:hover {
+    opacity: 0.8;
+}
+
+/* 
+   ==========================================================================
+   CATÁLOGO DE SÉRIES (GRID)
+   ========================================================================== 
+*/
+
+.secao {
+    padding: 60px 0;
+}
+
+.secao-cinza {
+    background-color: #181818; /* Tom levemente diferente para separar seções */
+}
+
+
+.grid-series {
+    display: flex;
+    /* Cria colunas que se ajustam sozinhas, com no mínimo 250px cada */
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); 
+    gap: 20px;
+}
+
+/* Cards Individuais */
+.card-serie {
+    background-color: #2f2f2f;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Efeito suave de movimento */
+    cursor: pointer;
+}
+
+.card-serie:hover {
+    transform: scale(1.05); /* Aumenta levemente o card ao passar o mouse */
+    z-index: 10;
+}
+
+.card-serie img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-conteudo {
+    padding: 15px;
+}
+
+.card-serie h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.card-serie .genero {
+    font-size: 12px;
+    color: #e50914;
+    margin-bottom: 10px;
+}
+
+.card-serie .descricao {
+    font-size: 13px;
+    color: #bbb;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limita o texto a 3 linhas */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* 
+   ==========================================================================
+   SOBRE E CONTATO
+   ========================================================================== 
+*/
+
+.lista-contato {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.lista-contato li {
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.lista-contato strong {
+    color: #fff;
+}
+
+/* 
+   ==========================================================================
+   RODAPÉ (FOOTER)
+   ========================================================================== 
+*/
+
+footer {
+    background-color: #141414;
+    border-top: 1px solid #333;
+    color: #808080;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 14px;
+}
+
+/* 
+   ==========================================================================
+   RESPONSIVIDADE (ADAPTAÇÃO PARA CELULAR)
+   ========================================================================== 
+*/
+
+@media (max-width: 768px) {
+    .box-destaque {
+        flex-direction: column; /* Empilha imagem e texto no celular */
+    }
+
+    .destaque-info {
+        padding: 20px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+}
+.grid-series{
+    display: flex;
+    gap: 30px;
+    width: 5000px;
+    padding: 20px 0;
+    animation-direction: reverse;
+    animation:slide-series 40s linear infinite;
+}
+
+.grid-series:hover{
+    animation-play-state: paused;
+}
+.carrossel-series{
+    overflow: hidden;
+}
+@keyframes slide-series{
+    0%{
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.grid-series2{
+    width: 1000px;
+    display: flex;
+    gap:30px;
+    padding: 20px 0;
+}
